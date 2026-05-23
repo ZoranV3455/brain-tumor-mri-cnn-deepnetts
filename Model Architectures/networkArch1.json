@@ -1,0 +1,64 @@
+{
+    "layers": [
+        {
+            "layerType": "INPUT",
+            "channels": 3,
+            "width": 64,
+            "height": 64
+        },
+        {
+            "filterWidth": 3,
+            "layerType": "CONVOLUTIONAL",
+            "filterHeight": 3,
+            "channels": 32,
+            "stride": 1,
+            "activation": "RELU"
+        },
+        {
+            "filterWidth": 2,
+            "layerType": "MAXPOOLING",
+            "filterHeight": 2,
+            "stride": 2
+        },
+        {
+            "filterWidth": 3,
+            "layerType": "CONVOLUTIONAL",
+            "filterHeight": 3,
+            "channels": 64,
+            "stride": 1,
+            "activation": "RELU"
+        },
+        {
+            "filterWidth": 2,
+            "layerType": "MAXPOOLING",
+            "filterHeight": 2,
+            "stride": 2
+        },
+        {
+            "filterWidth": 3,
+            "layerType": "CONVOLUTIONAL",
+            "filterHeight": 3,
+            "channels": 128,
+            "stride": 1,
+            "activation": "RELU"
+        },
+        {
+            "filterWidth": 2,
+            "layerType": "MAXPOOLING",
+            "filterHeight": 2,
+            "stride": 2
+        },
+        {
+            "layerType": "FULLY_CONNECTED",
+            "width": 256,
+            "activation": "RELU"
+        },
+        {
+            "layerType": "OUTPUT",
+            "width": 4,
+            "activation": "SOFTMAX"
+        }
+    ],
+    "lossFunction": "CROSS_ENTROPY",
+    "networkType": "CONVOLUTIONAL"
+}
