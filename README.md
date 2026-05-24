@@ -126,14 +126,14 @@ Ključni zaključci:
 
 ### Uspešno
 - CNN od nule postigao je 84.6% Val Acc na CPU-u, bolje od EfficientNetB0 (82.4%) na GPU-u
-- Glioma i No Tumor se prepoznaju sa preko 90% tačnosti
+- Klase glioma i bez tumora se prepoznaju sa preko 90% tačnosti
 - 85% precision i recall pokazuju balansiran model
 
 ### Ograničenja
 - 64×64 rezolucija gubi ~98% originalnih piksela (sa 512×512)
 - Bez augmentacije, model overfituje (Train 95% vs Test 73.9%)
 - Numerička nestabilnost (Infinity loss) u kasnijim epohama
-- Meningioma se najviše meša sa gliomom (16 od 83 slučaja)
+- Meningiom se najviše meša sa gliomom (16 od 83 slučaja)
 
 ### Predlozi za poboljšanje
 - Povećati rezoluciju na 128×128 ili 224×224
@@ -152,12 +152,29 @@ Projekat potvrđuje da DeepNetts, zahvaljujući Vector API-ju i Project Panama, 
 
 ## Kako reprodukovati
 
-1. Instalirati [DeepNetts](https://www.deepnetts.com/download)
-2. Klonirati ovaj repozitorijum
-3. Otvoriti DeepNetts → Open Project → izabrati ovaj folder
-4. Skinuti dataset sa [Kaggle-a](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset)
-5. U `Data Sets/NewImageDataset.properties` podesiti putanju do Training foldera
-6. Kliknuti **Run** (zelena strelica)
+### 1. Preuzimanje repozitorijuma
 
-## Licenca
-MIT License
+git clone https://github.com/ZoranV3455/brain-tumor-mri-cnn-deepnetts.git
+cd brain-tumor-mri-cnn-deepnetts
+
+### 2. Preuzimanje dataseta
+Skinuti dataset sa Kaggle-a (https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset) i raspakovati ga.
+
+### 3. Podešavanje putanje do slika
+U fajlu Data Sets/NewImageDataset.properties izmeniti liniju:
+dataSet.imageDir=C:\\Users\\KORISNIK\\Downloads\\archive\\Training
+zameniti sa stvarnom putanjom do foldera sa slikama.
+
+### 4. Otvaranje projekta
+- Instalirati DeepNetts (https://www.deepnetts.com/download)
+- Pokrenuti deepnettsplatform64.exe
+- File → Open Project → izabrati klonirani folder
+
+### 5. Pokretanje treninga
+- Kliknuti Run (zelena strelica) u toolbar-u
+- Trening traje ~77 minuta (25 epoha) na CPU-u
+- Model će biti sačuvan u Trained Models/ folderu
+
+### 6. Korišćenje već istreniranog modela
+Ako ne želite da trenirate ponovo, već istrenirani model se nalazi u:
+Trained Models/deepNetwork300.dnet
