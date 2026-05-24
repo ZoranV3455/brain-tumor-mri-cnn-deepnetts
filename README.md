@@ -17,7 +17,7 @@ Dataset je preuzet sa Kaggle-a: [Brain Tumor MRI Dataset](https://www.kaggle.com
 ### Struktura
 - Originalni dataset: ~7.200 slika (512×512 piksela)
 - Korišćeno: **1.200 slika** (300 po klasi) – smanjeno zbog hardverskih ograničenja
-- Formát: JPG, RGB
+- Format: JPG, RGB
 
 ### Podela
 - Trening: 60% (720 slika)
