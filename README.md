@@ -2,12 +2,13 @@
 
 ## 1. Opis problema
 Cilj projekta je automatska klasifikacija snimaka magnetne rezonance (MRI) mozga u četiri kategorije tumora:
-- **Glioma** (gliom)
-- **Meningioma** (meningiom)
-- **Pituitary tumor** (tumor hipofize)
-- **No tumor** (bez tumora)
+- **Gliom**
+- **Meningiom**
+- **Tumor hipofize** 
+- **Bez tumora** 
 
-Problem je medicinski značajan jer rana i tačna dijagnoza direktno utiče na izbor terapije i ishod lečenja. Ručna analiza MRI snimaka je spora i subjektivna, pa automatizacija pomoću dubokog učenja može značajno pomoći radiolozima.
+Problem je medicinski značajan jer rana dijagnoza direktno utiče na izbor terapije i ishod lečenja.
+Ručna analiza MRI snimaka je spora i subjektivna, pa automatizacija pomoću dubokog učenja može značajno pomoći radiolozima.
 
 ## 2. Podaci
 
