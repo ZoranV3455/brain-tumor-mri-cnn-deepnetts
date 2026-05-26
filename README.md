@@ -160,20 +160,20 @@ cd brain-tumor-mri-cnn-deepnetts
 ### 2. Preuzimanje dataseta
 Skinuti dataset sa Kaggle-a (https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset) i raspakovati ga.
 
-### 3. Podešavanje putanje do slika
-U fajlu Data Sets/NewImageDataset.properties izmeniti liniju:
-dataSet.imageDir=C:\\Users\\KORISNIK\\Downloads\\archive\\Training
-zameniti sa stvarnom putanjom do foldera sa slikama.
-
-### 4. Otvaranje projekta
+### 3. Otvaranje projekta
 - Instalirati DeepNetts (https://www.deepnetts.com/download)
 - Pokrenuti deepnettsplatform64.exe
 - File → Open Project → izabrati klonirani folder
+- Po potrebi, u fajlu Data Sets/NewImageDataset.properties podesiti putanju dataSet.imageDir tako da pokazuje na preuzeti Training folder sa slikama
 
-### 5. Pokretanje treninga
+### 4. Pokretanje treninga
 - Kliknuti Run (zelena strelica) u toolbar-u
 - Trening traje ~77 minuta (25 epoha) na CPU-u
 - Model će biti sačuvan u Trained Models/ folderu
+
+### 5. Korišćenje već istreniranog modela
+Ako ne želite da trenirate ponovo, već istrenirani model se nalazi u:
+Trained Models/deepNetwork300.dnet
 
 ### 6. Korišćenje već istreniranog modela
 Ako ne želite da trenirate ponovo, već istrenirani model se nalazi u:
