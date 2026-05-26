@@ -168,7 +168,6 @@ Skinuti dataset sa Kaggle-a (https://www.kaggle.com/datasets/masoudnickparvar/br
 
 ### 4. Pokretanje treninga
 - Kliknuti Run (zelena strelica) u toolbar-u
-- Trening traje ~77 minuta (25 epoha) na CPU-u
 - Model će biti sačuvan u Trained Models/ folderu
 
 ### 5. Korišćenje već istreniranog modela
