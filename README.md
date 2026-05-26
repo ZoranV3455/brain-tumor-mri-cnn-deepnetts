@@ -77,10 +77,10 @@ Trening je trajao **77 minuta** (25 epoha) na AMD Ryzen 5 CPU laptopu.
 ![Training Curves](results/training_curves.png)
 
 Na grafikonu se uočava nekoliko ključnih trenutaka:
+- **Overfitting** je vidljiv već od 6. epohe – trening tačnost nastavlja da raste (80% → 95%), dok validaciona tačnost osciluje i ne prati taj rast
 - **Najbolja validaciona tačnost (84.6%)** postignuta je u 20. epohi
-- **Overfitting** je vidljiv oko 13. epohe – trening tačnost raste, a validaciona stagnira
-- **Eksplodirajući gradijent** se javlja od 19. epohe – validacioni gubitak (Loss) odlazi u beskonačnost
-- Model se uprkos nestabilnosti **oporavlja** u 23. epohi (Val Acc 82.2%)
+- **Eksplodirajući gradijent** se javlja od 19. epohe – validacioni gubitak (Loss) odlazi u beskonačnost, dok trening gubitak ostaje stabilan
+- Model se uprkos numeričkoj nestabilnosti **oporavlja** u 23. epohi (Val Acc 82.2%), što pokazuje robusnost arhitekture i sposobnost Adam optimizatora da stabilizuje težine
 
 ## 5. Analiza osetljivosti i hiperparametarska optimizacija
 
@@ -182,6 +182,3 @@ Skinuti dataset sa Kaggle-a (https://www.kaggle.com/datasets/masoudnickparvar/br
 Ako ne želite da trenirate ponovo, već istrenirani model se nalazi u:
 Trained Models/deepNetwork300.dnet
 
-### 6. Korišćenje već istreniranog modela
-Ako ne želite da trenirate ponovo, već istrenirani model se nalazi u:
-Trained Models/deepNetwork300.dnet
