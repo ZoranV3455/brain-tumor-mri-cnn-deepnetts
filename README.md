@@ -74,6 +74,14 @@ Trening je trajao **77 minuta** (25 epoha) na AMD Ryzen 5 CPU laptopu.
 | 20 | 95.2% | 84.6% | 0.62 |
 | 25 | 94.6% | 77.9% | 1.16 |
 
+![Training Curves](results/training_curves.png)
+
+Na grafikonu se uočava nekoliko ključnih trenutaka:
+- **Najbolja validaciona tačnost (84.6%)** postignuta je u 20. epohi
+- **Overfitting** je vidljiv oko 13. epohe – trening tačnost raste, a validaciona stagnira
+- **Eksplodirajući gradijent** se javlja od 19. epohe – validacioni gubitak (Loss) odlazi u beskonačnost
+- Model se uprkos nestabilnosti **oporavlja** u 23. epohi (Val Acc 82.2%)
+
 ## 5. Analiza osetljivosti i hiperparametarska optimizacija
 
 Kroz više iteracija treninga testirani su različiti hiperparametri:
