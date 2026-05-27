@@ -51,7 +51,8 @@ Custom CNN od nule (bez transfer learning-a), ~2.2M parametara:
 
 - **Loss:** Categorical Cross-Entropy – meri koliko je model siguran u pogrešne odgovore; koristi se za multi-class klasifikaciju
 - **Optimizer:** Adam – adaptivni optimizator koji sam prilagođava learning rate za svaki parametar ponaosob
-
+Ova arhitektura je odabrana kao optimalna nakon više treniranja na drugim strukturama.
+Tri konvoluciona bloka sa rastućim brojem filtera (32 → 64 → 128) omogućavaju modelu da prvo detektuje osnovne karakteristike (ivice, uglove), zatim složenije oblike, i na kraju kompleksne strukture tumora. MaxPooling posle svakog bloka smanjuje dimenzionalnost i zadržava samo najizraženije signale.
 ## 4. Trening
 
 ### Hiperparametri
