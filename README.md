@@ -105,12 +105,10 @@ Ključni zaključci:
 
 ## 6. Rezultati evaluacije
 
-| Metrika | Vrednost |
-|---------|----------|
-| Test Accuracy | **73.9%** |
-| Precision (Macro Avg) | **85%** |
-| Recall (Macro Avg) | **85%** |
-| F1 Score (Macro Avg) | **85%** |
+- **Test Accuracy (73.9%)** – udeo tačno klasifikovanih slika u test skupu. Model je tačan u približno 3 od 4 slučaja.
+- **Precision (85%)** – kada model predvidi određenu klasu, u 85% slučajeva je zaista u pravu.
+- **Recall (85%)** – od svih slika koje pripadaju jednoj klasi, model ih uspešno prepozna 85%.
+- **F1 Score (85%)** – harmonijska sredina preciznosti i odziva; pokazuje balansiran model bez pristrasnosti ka jednoj klasi.
 
 ### Confusion Matrix (355 test slika)
 
