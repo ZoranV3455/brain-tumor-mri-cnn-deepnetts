@@ -1,5 +1,5 @@
 # Klasifikacija MRI snimaka tumora mozga primenom CNN u DeepNetts-u
-
+        
 ## 1. Opis problema
 Cilj projekta je automatska klasifikacija snimaka magnetne rezonance (MRI) mozga u četiri kategorije tumora:
 - **Gliom**
@@ -191,5 +191,12 @@ Skinuti dataset sa Kaggle-a (https://www.kaggle.com/datasets/masoudnickparvar/br
 ### 5. Korišćenje već istreniranog modela
 Ako ne želite da trenirate ponovo, već istrenirani model se nalazi u:
 Trained Models/deepNetwork300.dnet
+
+**Zoran Vladisavljević, 2026/0206**  
+Predmet: Duboko učenje i neuronske mreže  
+Prof. dr Zoran Ševarac  
+Fakultet organizacionih nauka, Univerzitet u Beogradu  
+2026.
+
 
 
